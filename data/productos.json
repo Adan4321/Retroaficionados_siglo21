@@ -3,7 +3,7 @@
 "id": 1,
 "nombre": "Intel Pentium 75",
 "tipo": "Procesador",
-"precio": 85,
+"precio": 25000,
 "imagen": "assets/images/productos/pentium75.jpg",
 "descripcion": "Procesador Intel Pentium de primera generación."
 },
@@ -11,7 +11,7 @@
 "id": 2,
 "nombre": "Intel Pentium II 350",
 "tipo": "Procesador",
-"precio": 120,
+"precio": 39300,
 "imagen": "assets/images/productos/pentium2-350.jpg",
 "descripcion": "Procesador icónico de finales de los 90."
 },
@@ -19,7 +19,7 @@
 "id": 3,
 "nombre": "Intel Pentium III 800",
 "tipo": "Procesador",
-"precio": 180,
+"precio": 56600,
 "imagen": "assets/images/productos/pentium3-800.jpg",
 "descripcion": "Procesador muy popular para gaming."
 },
@@ -27,7 +27,7 @@
 "id": 4,
 "nombre": "AMD K6-2 500",
 "tipo": "Procesador",
-"precio": 110,
+"precio": 40340,
 "imagen": "assets/images/productos/amd-k6-2.jpg",
 "descripcion": "Competidor directo de Intel Pentium II."
 },
@@ -35,7 +35,7 @@
 "id": 5,
 "nombre": "AMD Athlon Thunderbird 1 GHz",
 "tipo": "Procesador",
-"precio": 220,
+"precio": 22800,
 "imagen": "assets/images/productos/athlon-thunderbird.jpg",
 "descripcion": "Primer Athlon en alcanzar 1 GHz."
 },
@@ -43,7 +43,7 @@
 "id": 6,
 "nombre": "3DFX Voodoo Graphics",
 "tipo": "Placa de Video",
-"precio": 300,
+"precio": 80000,
 "imagen": "assets/images/productos/voodoo1.jpg",
 "descripcion": "Aceleradora 3D histórica."
 },
@@ -51,7 +51,7 @@
 "id": 7,
 "nombre": "3DFX Voodoo2",
 "tipo": "Placa de Video",
-"precio": 450,
+"precio": 45000,
 "imagen": "assets/images/productos/voodoo2.jpg",
 "descripcion": "Una de las placas más famosas de los 90."
 },
@@ -59,7 +59,7 @@
 "id": 8,
 "nombre": "NVIDIA RIVA TNT2",
 "tipo": "Placa de Video",
-"precio": 260,
+"precio": 26000,
 "imagen": "assets/images/productos/tnt2.jpg",
 "descripcion": "Tarjeta gráfica muy popular."
 },
@@ -67,7 +67,7 @@
 "id": 9,
 "nombre": "ATI Rage 128",
 "tipo": "Placa de Video",
-"precio": 210,
+"precio": 82310,
 "imagen": "assets/images/productos/rage128.jpg",
 "descripcion": "Gráfica destacada de ATI."
 },
@@ -75,7 +75,7 @@
 "id": 10,
 "nombre": "GeForce 256",
 "tipo": "Placa de Video",
-"precio": 500,
+"precio": 50000,
 "imagen": "assets/images/productos/geforce256.jpg",
 "descripcion": "Considerada la primera GPU moderna."
 }
@@ -84,7 +84,7 @@
 "id": 11,
 "nombre": "Sound Blaster 16",
 "tipo": "Placa de Sonido",
-"precio": 95,
+"precio": 20540,
 "imagen": "assets/images/productos/sb16.jpg",
 "descripcion": "Tarjeta de sonido clásica."
 },
@@ -92,7 +92,7 @@
 "id": 12,
 "nombre": "Sound Blaster AWE32",
 "tipo": "Placa de Sonido",
-"precio": 150,
+"precio": 16900,
 "imagen": "assets/images/productos/awe32.jpg",
 "descripcion": "Tarjeta multimedia avanzada."
 },
@@ -100,7 +100,7 @@
 "id": 13,
 "nombre": "Sound Blaster Live!",
 "tipo": "Placa de Sonido",
-"precio": 180,
+"precio": 40000,
 "imagen": "assets/images/productos/sblive.jpg",
 "descripcion": "Tarjeta PCI muy popular."
 },
@@ -108,7 +108,7 @@
 "id": 14,
 "nombre": "Memoria EDO 32 MB",
 "tipo": "Memoria RAM",
-"precio": 40,
+"precio": 5000,
 "imagen": "assets/images/productos/edo32.jpg",
 "descripcion": "Memoria utilizada en PCs Pentium."
 },
@@ -116,7 +116,7 @@
 "id": 15,
 "nombre": "SDRAM PC100 128 MB",
 "tipo": "Memoria RAM",
-"precio": 60,
+"precio": 6000,
 "imagen": "assets/images/productos/pc100.jpg",
 "descripcion": "Memoria para Pentium II y III."
 },
@@ -124,7 +124,7 @@
 "id": 16,
 "nombre": "SDRAM PC133 256 MB",
 "tipo": "Memoria RAM",
-"precio": 80,
+"precio": 8000,
 "imagen": "assets/images/productos/pc133.jpg",
 "descripcion": "Última generación SDRAM antes del DDR."
 },
@@ -132,7 +132,7 @@
 "id": 17,
 "nombre": "ASUS P2B",
 "tipo": "Motherboard",
-"precio": 190,
+"precio": 120000,
 "imagen": "assets/images/productos/asusp2b.jpg",
 "descripcion": "Motherboard legendaria para Pentium II."
 },
@@ -140,7 +140,7 @@
 "id": 18,
 "nombre": "ABIT BH6",
 "tipo": "Motherboard",
-"precio": 180,
+"precio": 130000,
 "imagen": "assets/images/productos/bh6.jpg",
 "descripcion": "Placa base muy popular entre entusiastas."
 },
@@ -148,7 +148,7 @@
 "id": 19,
 "nombre": "BIOS Award ROM",
 "tipo": "BIOS",
-"precio": 25,
+"precio": 5500,
 "imagen": "assets/images/productos/awardbios.jpg",
 "descripcion": "Chip BIOS utilizado en numerosos equipos."
 },
@@ -156,7 +156,7 @@
 "id": 20,
 "nombre": "Fuente ATX 250W",
 "tipo": "Fuente",
-"precio": 65,
+"precio": 65000,
 "imagen": "assets/images/productos/atx250.jpg",
 "descripcion": "Fuente ATX para equipos Pentium III."
 },

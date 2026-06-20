@@ -823,6 +823,11 @@ nav a:hover::after {
         width: 100%;
         height: 100%;
     }
+    .monitor-screen h1{
+        margin-left: -10px;
+        text-wrap: wrap;
+        font-size: 1.5rem;
+    }
    
 }
 

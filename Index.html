@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Retroaficionados Siglo 21 - E-Commerce Retro">
+
+    <title>
+        Retroaficionados Siglo 21
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- CRT OVERLAY                           -->
+    <!-- ===================================== -->
+
+    <div id="crtOverlay"></div>
+
+    <!-- ===================================== -->
+    <!-- LOADER                                -->
+    <!-- ===================================== -->
+
+    <div id="loader">
+
+        <div class="loader-window">
+
+            <div class="loader-titlebar">
+
+                <span>
+                    Retroaficionados Siglo 21
+                </span>
+
+            </div>
+
+            <div class="loader-content">
+
+                <h3>
+                    Inicializando sistema...
+                </h3>
+
+                <p>
+                    Cargando catálogo retro
+                </p>
+
+                <div class="progress-container">
+
+                    <div id="progressBar"></div>
+
+                </div>
+
+                <span id="loaderPercent">
+                    0%
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- NOTIFICACIONES                        -->
+    <!-- ===================================== -->
+
+    <div id="notificationContainer"></div>
+
+    <!-- ===================================== -->
+    <!-- HEADER                                -->
+    <!-- ===================================== -->
+
+    <header id="mainHeader">
+
+        <div class="logo-container">
+
+            <div class="logo-icon">
+                💾
+            </div>
+
+            <div class="logo-text">
+
+                <h1>
+                    Retroaficionados
+                </h1>
+
+                <span>
+                    Siglo 21
+                </span>
+
+            </div>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#catalogo">
+                        Catálogo
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                id="favoritesButton"
+                class="icon-button">
+
+                ❤
+
+                <span id="favoritesCount">
+                    0
+                </span>
+
+            </button>
+
+            <button
+                id="cartButton"
+                class="icon-button">
+
+                🛒
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ===================================== -->
+    <!-- FAVORITOS                             -->
+    <!-- ===================================== -->
+
+    <aside id="favoritesSidebar">
+
+        <div class="sidebar-header">
+
+            <h2>
+                Favoritos
+            </h2>
+
+            <button id="closeFavorites">
+                ✖
+            </button>
+
+        </div>
+
+        <div id="favoritesItems"></div>
+
+    </aside>
+
+    <!-- ===================================== -->
+    <!-- CARRITO                               -->
+    <!-- ===================================== -->
+
+    <aside id="cartSidebar">
+
+        <div class="sidebar-header">
+
+            <h2>
+                Carrito
+            </h2>
+
+            <button id="closeCart">
+                ✖
+            </button>
+
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                Total:
+
+                <span id="cartTotal">
+                    $0
+                </span>
+
+            </div>
+
+            <button id="checkoutButton">
+                Finalizar pedido
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- ===================================== -->
+    <!-- HERO                                  -->
+    <!-- ===================================== -->
+
+    <section
+        id="inicio"
+        class="hero">
+
+        <div class="hero-background"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-monitor">
+
+                <div class="monitor-frame">
+
+                    <div class="monitor-screen">
+
+                        <h2>
+                            Bienvenido a
+                        </h2>
+
+                        <h1>
+                            Retroaficionados Siglo 21
+                        </h1>
+
+                        <p>
+
+                            Aquí no vendemos hardware antiguo. Restauramos épocas completas.
+
+                        </p>
+
+                        <blockquote>
+
+                            "Si quieres viajar al pasado de la informática, cada motherboard guarda una historia, 
+                            cada procesador mantiene viva una época que el tiempo no pudo borrar."
+
+                        </blockquote>
+
+                        <button
+                            id="enterStoreButton">
+
+                            Mostrar catálogo
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================== -->
+    <!-- CATÁLOGO                              -->
+    <!-- ===================================== -->
+
+    <section
+        id="catalogo"
+        class="catalog-section">
+
+        <div class="section-title">
+
+            <h2>
+                Catálogo Completo
+            </h2>
+
+            <p>
+                Explora todos los productos disponibles.
+            </p>
+
+        </div>
+
+        <!-- ===================================== -->
+        <!-- FILTROS                              -->
+        <!-- ===================================== -->
+
+        <div class="filters-panel">
+
+            <div class="search-box">
+                <label>
+                    Buscador
+                </label>
+
+                <input style="margin-top: 7px;"
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar producto...">
+
+            </div>
+
+            <div class="filter-group">
+
+                <label>
+                    Categoría
+                </label>
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        Todas
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="filter-group">
+
+                <label>
+                    Ordenar
+                </label>
+
+                <select id="sortFilter">
+
+                    <option value="default">
+                        Predeterminado
+                    </option>
+
+                    <option value="priceAsc">
+                        Precio ↑
+                    </option>
+
+                    <option value="priceDesc">
+                        Precio ↓
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="catalog-info">
+
+            <span id="resultsCounter">
+
+                0 productos encontrados
+
+            </span>
+
+        </div>
+
+        <div
+            id="productsGrid"
+            class="products-grid">
+
+        </div>
+
+    </section>
+        <!-- ===================================== -->
+    <!-- MODAL PRODUCTO                        -->
+    <!-- ===================================== -->
+
+    <div
+        id="productModal"
+        class="modal">
+
+        <div class="modal-content">
+
+            <button
+                id="closeProductModal"
+                class="modal-close">
+
+                ✖
+
+            </button>
+
+            <div class="modal-body">
+
+                <div class="modal-image-container">
+
+                    <img
+                        id="modalImage"
+                        src=""
+                        alt="Producto">
+
+                    <button
+                        id="zoomImageButton"
+                        class="secondary-button">
+
+                        🔍 Ampliar imagen
+
+                    </button>
+
+                </div>
+
+                <div class="modal-info">
+
+                    <h2 id="modalTitle">
+
+                        Producto
+
+                    </h2>
+
+                    <div class="modal-meta">
+
+                        <span id="modalCategory">
+
+                            Categoría
+
+                        </span>
+
+                    </div>
+
+                    <div class="modal-price">
+
+                        <span id="modalPrice">
+
+                            $0
+
+                        </span>
+
+                    </div>
+
+                    <div class="modal-description">
+
+                        <h3>
+
+                            Descripción
+
+                        </h3>
+
+                        <p id="modalDescription">
+
+                        </p>
+
+                    </div>
+
+                    <div class="modal-actions">
+
+                        <button
+                            id="addToCartModal"
+                            class="primary-button">
+
+                            Agregar al carrito
+
+                        </button>
+
+                        <button
+                            id="addToFavoritesModal"
+                            class="secondary-button">
+
+                            Agregar a favoritos
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- MODAL ZOOM IMAGEN                     -->
+    <!-- ===================================== -->
+
+    <div
+        id="imageZoomModal"
+        class="zoom-modal">
+
+        <button
+            id="closeZoomModal"
+            class="zoom-close">
+
+            ✖
+
+        </button>
+
+        <img
+            id="zoomedImage"
+            src=""
+            alt="Imagen ampliada">
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- MODAL CHECKOUT                        -->
+    <!-- ===================================== -->
+
+    <div
+        id="checkoutModal"
+        class="checkout-modal">
+
+        <div class="checkout-content">
+
+            <button
+                id="closeCheckoutModal"
+                class="modal-close">
+
+                ✖
+
+            </button>
+
+            <h2>
+
+                Finalizar compra
+
+            </h2>
+
+            <form id="checkoutForm">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Nombre completo
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Correo electrónico
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="customerEmail"
+                        required>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-button">
+
+                    Confirmar pedido
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- AUDIO                                 -->
+    <!-- ===================================== -->
+
+    <audio
+        id="startupSound"
+        preload="auto">
+
+        <source
+            src="assets/sounds/startup.wav"
+            type="audio/wav">
+
+    </audio>
+
+    <audio
+        id="clickSound"
+        preload="auto">
+
+        <source
+            src="assets/sounds/click.wav"
+            type="audio/wav">
+
+    </audio>
+
+    <!-- ===================================== -->
+    <!-- FOOTER                                -->
+    <!-- ===================================== -->
+
+    <footer id="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Retroaficionados Siglo 21
+
+            </p>
+
+            <p>
+
+                Desarrollado y mantenido por
+
+                <strong>
+
+                    Adán Ledesma
+
+                </strong>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ===================================== -->
+    <!-- SCRIPT PRINCIPAL                      -->
+    <!-- ===================================== -->
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
